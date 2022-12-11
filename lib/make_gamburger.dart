@@ -257,9 +257,15 @@ class _MakeHamburgerState extends State<MakeHamburger> {
       mapOffset = lastMOS;
       return;
     }
-    if (mapOffset.dy < -50 ||mapOffset.dy >  virtualFieldSize.height-workingScreenSize.height+50) {
+    if (mapOffset.dy < -50) {
       mapOffset = lastMOS;
       return;
+    }
+    if (mapOffset.dy >  virtualFieldSize.height-workingScreenSize.height+50) {
+      if (virtualFieldSize.height > workingScreenSize.height) {
+        mapOffset = lastMOS;
+        return;
+      }
     }
     //printD('mapOffset $mapOffset');
     setState((){});// 414.0, 660.0

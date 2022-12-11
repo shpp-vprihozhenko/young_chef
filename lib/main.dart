@@ -1,4 +1,5 @@
 /*
+- about
 - вики по ингредиенту... - рассказ...?
 - строгая / нестрогая готовка - только то, что в списке или рандом
 https://ru.wikipedia.org/w/api.php?action=query&list=search&srwhat=text&srsearch=%D1%8F%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE&format=json
